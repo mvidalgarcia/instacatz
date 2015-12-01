@@ -1,0 +1,38 @@
+.menu {
+    display: none;
+}
+
+@media all and (max-width: $mobile-width) {
+  .menu {
+    background: black;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+
+    .button-menu {
+      display: block;
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .button-menu {
+    border: none;
+    color: white;
+    background: transparent;
+
+    .fa {
+      font-size: 20px;
+    }
+
+  }
+
+} // end @media mobile

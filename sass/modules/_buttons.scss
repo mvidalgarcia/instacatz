@@ -1,0 +1,14 @@
+.button {
+  color: #555;
+  background: #dcdcdc url('https://goo.gl/GQP2yG') no-repeat right 20px center;
+  background-size: contain;
+  padding-right: 40px;
+}
+
+.button_secondary {
+   background: red;
+   @include border-radius(15px);
+    span {
+       color: white;
+    }
+}
