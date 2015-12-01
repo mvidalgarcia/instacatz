@@ -90,7 +90,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/modules/_products.scss */
 .products {
-  margin: 1em 0;
+  margin: 50px 0;
 }
 /* line 5, ../sass/modules/_products.scss */
 .products ul {
@@ -106,6 +106,122 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 100%;
 }
 
+/* line 1, ../sass/base/_layouts.scss */
+.wrapper {
+  width: 968px;
+  margin: 20px auto;
+}
+
+/*** Grid layout ***/
+/* line 7, ../sass/base/_layouts.scss */
+.row,
+.column {
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/base/_layouts.scss */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+/* line 18, ../sass/base/_layouts.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 22, ../sass/base/_layouts.scss */
+.column {
+  position: relative;
+  float: left;
+}
+
+/* line 28, ../sass/base/_layouts.scss */
+.column + .column {
+  padding: 0 15px;
+}
+
+/* line 32, ../sass/base/_layouts.scss */
+.container {
+  position: relative;
+}
+
+/* line 36, ../sass/base/_layouts.scss */
+.column-1 {
+  width: 6.86666666667%;
+}
+
+/* line 37, ../sass/base/_layouts.scss */
+.column-2 {
+  width: 15.3333333333%;
+}
+
+/* line 38, ../sass/base/_layouts.scss */
+.column-3, .products ul li {
+  width: 23.8%;
+}
+
+/* line 39, ../sass/base/_layouts.scss */
+.column-4 {
+  width: 32.2666666667%;
+}
+
+/* line 40, ../sass/base/_layouts.scss */
+.column-5 {
+  width: 40.7333333333%;
+}
+
+/* line 41, ../sass/base/_layouts.scss */
+.column-6 {
+  width: 49.2%;
+}
+
+/* line 42, ../sass/base/_layouts.scss */
+.column-7 {
+  width: 57.6666666667%;
+}
+
+/* line 43, ../sass/base/_layouts.scss */
+.column-8 {
+  width: 66.1333333333%;
+}
+
+/* line 44, ../sass/base/_layouts.scss */
+.column-9 {
+  width: 74.6%;
+}
+
+/* line 45, ../sass/base/_layouts.scss */
+.column-10 {
+  width: 83.0666666667%;
+}
+
+/* line 46, ../sass/base/_layouts.scss */
+.column-11 {
+  width: 91.5333333333%;
+}
+
+/* line 47, ../sass/base/_layouts.scss */
+.column-12 {
+  width: 100%;
+}
+
+@media all and (max-width: 320px) {
+  /* line 52, ../sass/base/_layouts.scss */
+  .column-1, .column-2, .column-3, .products ul li,
+  .column-4, .column-5, .column-6,
+  .column-7, .column-8, .column-9,
+  .column-10, .column-11, .column-12 {
+    width: 100%;
+  }
+
+  /* line 58, ../sass/base/_layouts.scss */
+  .wrapper {
+    margin-top: 0;
+    width: 100%;
+  }
+}
 /* line 1, ../sass/base/_menu.scss */
 .menu {
   display: none;
@@ -116,174 +232,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .menu {
     background: black;
     display: block;
-    margin-bottom: 10px;
+    margin-top: 44px;
     min-height: 35px;
     padding: 10px 15px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1;
   }
-  /* line 16, ../sass/base/_menu.scss */
+  /* line 17, ../sass/base/_menu.scss */
   .menu ul li {
     padding: 10px;
   }
-  /* line 18, ../sass/base/_menu.scss */
+  /* line 19, ../sass/base/_menu.scss */
   .menu ul li a {
     color: white;
   }
 
-  /* line 26, ../sass/base/_menu.scss */
+  /* line 27, ../sass/base/_menu.scss */
   .collapse.active {
     display: block;
   }
 
-  /* line 30, ../sass/base/_menu.scss */
+  /* line 31, ../sass/base/_menu.scss */
   .collapse {
     display: none;
   }
 
-  /* line 34, ../sass/base/_menu.scss */
+  /* line 35, ../sass/base/_menu.scss */
   .sidebar {
     display: none;
   }
 
-  /* line 38, ../sass/base/_menu.scss */
-  .button-menu {
+  /* line 39, ../sass/base/_menu.scss */
+  .hamburger-btn {
     background: none;
     border: none;
     color: white;
     display: block;
-    position: absolute;
+    position: fixed;
     right: 10px;
-    top: 6px;
+    top: 10px;
     z-index: 10;
   }
-  /* line 47, ../sass/base/_menu.scss */
-  .button-menu .fa {
+  /* line 48, ../sass/base/_menu.scss */
+  .hamburger-btn .fa {
     font-size: 20px;
   }
 }
 /* line 1, ../sass/base/_header.scss */
 .header {
-  text-align: center;
-  font-size: 24px;
-  padding: 10px;
-  font-family: sans-serif;
-  font-weight: bold;
   background: black;
   color: white;
-}
-
-/* line 1, ../sass/base/_layouts.scss */
-.wrapper {
-  width: 968px;
-  margin: 20px auto;
-}
-
-/* line 6, ../sass/base/_layouts.scss */
-.row,
-.column {
-  box-sizing: border-box;
-}
-
-/* line 11, ../sass/base/_layouts.scss */
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-}
-
-/* line 17, ../sass/base/_layouts.scss */
-.row:after {
-  clear: both;
-}
-
-/* line 21, ../sass/base/_layouts.scss */
-.column {
-  position: relative;
-  float: left;
-}
-
-/* line 27, ../sass/base/_layouts.scss */
-.column + .column {
-  padding: 0 15px;
-}
-
-/* line 31, ../sass/base/_layouts.scss */
-.container {
-  position: relative;
-}
-
-/* line 35, ../sass/base/_layouts.scss */
-.column-1 {
-  width: 6.86666666667%;
-}
-
-/* line 36, ../sass/base/_layouts.scss */
-.column-2 {
-  width: 15.3333333333%;
-}
-
-/* line 37, ../sass/base/_layouts.scss */
-.column-3, .products ul li {
-  width: 23.8%;
-}
-
-/* line 38, ../sass/base/_layouts.scss */
-.column-4 {
-  width: 32.2666666667%;
-}
-
-/* line 39, ../sass/base/_layouts.scss */
-.column-5 {
-  width: 40.7333333333%;
-}
-
-/* line 40, ../sass/base/_layouts.scss */
-.column-6 {
-  width: 49.2%;
-}
-
-/* line 41, ../sass/base/_layouts.scss */
-.column-7 {
-  width: 57.6666666667%;
-}
-
-/* line 42, ../sass/base/_layouts.scss */
-.column-8 {
-  width: 66.1333333333%;
-}
-
-/* line 43, ../sass/base/_layouts.scss */
-.column-9 {
-  width: 74.6%;
-}
-
-/* line 44, ../sass/base/_layouts.scss */
-.column-10 {
-  width: 83.0666666667%;
-}
-
-/* line 45, ../sass/base/_layouts.scss */
-.column-11 {
-  width: 91.5333333333%;
-}
-
-/* line 46, ../sass/base/_layouts.scss */
-.column-12 {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
   width: 100%;
-}
-
-@media all and (max-width: 320px) {
-  /* line 54, ../sass/base/_layouts.scss */
-  .column-1, .column-2, .column-3, .products ul li,
-  .column-4, .column-5, .column-6,
-  .column-7, .column-8, .column-9,
-  .column-10, .column-11, .column-12 {
-    width: 100%;
-  }
-
-  /* line 60, ../sass/base/_layouts.scss */
-  .wrapper {
-    width: 100%;
-    margin-top: 0;
-  }
+  z-index: 1;
 }

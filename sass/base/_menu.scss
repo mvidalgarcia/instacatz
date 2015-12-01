@@ -7,11 +7,12 @@
   .menu {
     background: black;
     display: block;
-    margin-bottom: 10px;
+    margin-top: 44px;
     min-height: 35px;
     padding: 10px 15px;
-    position: relative;
-
+    position: fixed;
+    top: 0;
+    z-index: 1;
     ul {
       li {
         padding: 10px;
@@ -35,14 +36,14 @@
     display: none;
   }
 
-  .button-menu {
+  .hamburger-btn {
     background: none;
     border: none;
     color: white;
     display: block;
-    position: absolute;
+    position: fixed;
     right: 10px;
-    top: 6px;
+    top: 10px;
     z-index: 10;
     .fa {
       font-size: 20px;
