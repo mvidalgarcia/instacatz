@@ -1,10 +1,15 @@
 .products {
+
+  margin: 1em 0;
+
   ul {
     width: 100%;
+
     li {
       display: inline-block;
       margin: 0;
       @extend .column-3;
+
       img {
         max-width: 100%;
       }

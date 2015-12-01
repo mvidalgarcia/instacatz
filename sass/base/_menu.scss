@@ -3,21 +3,32 @@
 }
 
 @media all and (max-width: $mobile-width) {
+
   .menu {
     background: black;
     display: block;
     margin-bottom: 10px;
+    min-height: 35px;
     padding: 10px 15px;
+    position: relative;
 
     ul {
       li {
-        display: inline-block;
+        padding: 10px;
+        a {
+          color: white;
+        }
       }
     }
+  }
 
-    .button-menu {
-      display: block;
-    }
+  // Show hamburger menu
+  .collapse.active {
+    display: block;
+  }
+
+  .collapse {
+    display: none;
   }
 
   .sidebar {
@@ -25,10 +36,14 @@
   }
 
   .button-menu {
+    background: none;
     border: none;
     color: white;
-    background: transparent;
-
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    z-index: 10;
     .fa {
       font-size: 20px;
     }
