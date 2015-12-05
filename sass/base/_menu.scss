@@ -1,18 +1,21 @@
-.menu {
+/* Collapsable menu */
+
+.collapsable-menu {
     display: none;
 }
 
 @media all and (max-width: $mobile-width) {
 
-  .menu {
-    background: black;
+  .collapsable-menu {
+    background: $color-main-blue;
     display: block;
-    margin-top: 44px;
-    min-height: 35px;
+    height: 100%;
     padding: 10px 15px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    left: 0;
+    width: 75%;
+    z-index: 30;
     ul {
       li {
         padding: 10px;
@@ -24,31 +27,48 @@
   }
 
   // Show hamburger menu
-  .collapse.active {
-    display: block;
-  }
-
   .collapse {
     display: none;
+    transition: all 2s;
+    &.active {
+      display: block;
+    }
+  }
+
+  .side-screen {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    left: 0;
+    height: 100%;
+    visibility: hidden;
+    width: 100%;
+    z-index: 20;
+    &.active {
+      visibility: visible;
+    }
   }
 
   .sidebar {
     display: none;
   }
 
-  .hamburger-btn {
+  // Menu icons
+  .btn {
     background: none;
     border: none;
-    color: white;
-    display: block;
+    color: $color-white;
     position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 10;
+    &.hamburger-btn {
+      left: 10px;
+      top: 12.5px;
+      z-index: 10;
+    }
+    &.cross-btn {
+      left: 60%;
+    }
     .fa {
       font-size: 20px;
     }
-
   }
 
 } // end @media mobile

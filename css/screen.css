@@ -1,0 +1,331 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Colours */
+/* Sizes */
+/* Fonts */
+@font-face {
+  font-family: Billabong;
+  src: url(fonts/Billabong.ttf);
+}
+/* Mixins */
+/* line 1, ../sass/modules/_buttons.scss */
+.button {
+  color: #555;
+  background: #dcdcdc url("https://goo.gl/GQP2yG") no-repeat right 20px center;
+  background-size: contain;
+  padding-right: 40px;
+}
+
+/* line 8, ../sass/modules/_buttons.scss */
+.button_secondary {
+  background: red;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+}
+/* line 11, ../sass/modules/_buttons.scss */
+.button_secondary span {
+  color: white;
+}
+
+/* line 1, ../sass/modules/_products.scss */
+.products {
+  margin: 50px 0;
+}
+/* line 5, ../sass/modules/_products.scss */
+.products ul {
+  width: 100%;
+}
+/* line 8, ../sass/modules/_products.scss */
+.products ul li {
+  display: inline-block;
+  margin: 0;
+}
+/* line 13, ../sass/modules/_products.scss */
+.products ul li img {
+  max-width: 100%;
+}
+
+/* line 1, ../sass/base/_layouts.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* line 5, ../sass/base/_layouts.scss */
+.wrapper {
+  width: 968px;
+  margin: 20px auto;
+}
+
+/*** Grid layout ***/
+/* line 11, ../sass/base/_layouts.scss */
+.row,
+.column {
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/base/_layouts.scss */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+/* line 22, ../sass/base/_layouts.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 26, ../sass/base/_layouts.scss */
+.column {
+  position: relative;
+  float: left;
+}
+
+/* line 32, ../sass/base/_layouts.scss */
+.column + .column {
+  padding: 0 15px;
+}
+
+/* line 36, ../sass/base/_layouts.scss */
+.container {
+  position: relative;
+}
+
+/* line 40, ../sass/base/_layouts.scss */
+.column-1 {
+  width: 6.86666666667%;
+}
+
+/* line 41, ../sass/base/_layouts.scss */
+.column-2 {
+  width: 15.3333333333%;
+}
+
+/* line 42, ../sass/base/_layouts.scss */
+.column-3, .products ul li {
+  width: 23.8%;
+}
+
+/* line 43, ../sass/base/_layouts.scss */
+.column-4 {
+  width: 32.2666666667%;
+}
+
+/* line 44, ../sass/base/_layouts.scss */
+.column-5 {
+  width: 40.7333333333%;
+}
+
+/* line 45, ../sass/base/_layouts.scss */
+.column-6 {
+  width: 49.2%;
+}
+
+/* line 46, ../sass/base/_layouts.scss */
+.column-7 {
+  width: 57.6666666667%;
+}
+
+/* line 47, ../sass/base/_layouts.scss */
+.column-8 {
+  width: 66.1333333333%;
+}
+
+/* line 48, ../sass/base/_layouts.scss */
+.column-9 {
+  width: 74.6%;
+}
+
+/* line 49, ../sass/base/_layouts.scss */
+.column-10 {
+  width: 83.0666666667%;
+}
+
+/* line 50, ../sass/base/_layouts.scss */
+.column-11 {
+  width: 91.5333333333%;
+}
+
+/* line 51, ../sass/base/_layouts.scss */
+.column-12 {
+  width: 100%;
+}
+
+@media all and (max-width: 320px) {
+  /* line 56, ../sass/base/_layouts.scss */
+  .column-1, .column-2, .column-3, .products ul li,
+  .column-4, .column-5, .column-6,
+  .column-7, .column-8, .column-9,
+  .column-10, .column-11, .column-12 {
+    width: 100%;
+  }
+
+  /* line 62, ../sass/base/_layouts.scss */
+  .wrapper {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+/* Collapsable menu */
+/* line 3, ../sass/base/_menu.scss */
+.collapsable-menu {
+  display: none;
+}
+
+@media all and (max-width: 320px) {
+  /* line 9, ../sass/base/_menu.scss */
+  .collapsable-menu {
+    background: #125688;
+    display: block;
+    height: 100%;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    z-index: 30;
+  }
+  /* line 20, ../sass/base/_menu.scss */
+  .collapsable-menu ul li {
+    padding: 10px;
+  }
+  /* line 22, ../sass/base/_menu.scss */
+  .collapsable-menu ul li a {
+    color: white;
+  }
+
+  /* line 30, ../sass/base/_menu.scss */
+  .collapse {
+    display: none;
+    transition: all 2s;
+  }
+  /* line 33, ../sass/base/_menu.scss */
+  .collapse.active {
+    display: block;
+  }
+
+  /* line 38, ../sass/base/_menu.scss */
+  .side-screen {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    height: 100%;
+    visibility: hidden;
+    width: 100%;
+    z-index: 20;
+  }
+  /* line 46, ../sass/base/_menu.scss */
+  .side-screen.active {
+    visibility: visible;
+  }
+
+  /* line 51, ../sass/base/_menu.scss */
+  .sidebar {
+    display: none;
+  }
+
+  /* line 56, ../sass/base/_menu.scss */
+  .btn {
+    background: none;
+    border: none;
+    color: #fff;
+    position: fixed;
+  }
+  /* line 61, ../sass/base/_menu.scss */
+  .btn.hamburger-btn {
+    left: 10px;
+    top: 12.5px;
+    z-index: 10;
+  }
+  /* line 66, ../sass/base/_menu.scss */
+  .btn.cross-btn {
+    left: 60%;
+  }
+  /* line 69, ../sass/base/_menu.scss */
+  .btn .fa {
+    font-size: 20px;
+  }
+}
+/* line 1, ../sass/base/_header.scss */
+.header {
+  background: #125688;
+  color: white;
+  font-family: 'Billabong', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  left: 0;
+  padding: 15px 10px 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

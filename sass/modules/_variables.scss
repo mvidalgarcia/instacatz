@@ -1,8 +1,22 @@
+/* Colours */
+$color-main-blue: #125688;
+$color-light-grey: #fafafa;
+$color-white: #fff;
+$color-black: #000;
+
+/* Sizes */
 $max-width: 968px;
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+/* Fonts */
+@font-face {
+    font-family: Billabong;
+    src: url(fonts/Billabong.ttf);
+}
+
+/* Mixins */
 @mixin border-radius($radius) {
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
