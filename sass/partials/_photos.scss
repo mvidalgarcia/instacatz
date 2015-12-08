@@ -23,19 +23,30 @@
   }
 
   .user {
-    display: table;
+    position: relative;
+    width: 100%;
+
+    &>* {
+      vertical-align: middle;
+    }
+
     img {
       @include border-radius(50%);
-      display: table-cell;
-      vertical-align: middle;
       height: 25px;
       padding: 0;
+      margin: 0;
       width: 25px;
     }
+
     a {
-      display: table-cell;
-      vertical-align: middle;
       padding-left: 0.4em;
+    }
+
+    time {
+      color: $color-light-grey;
+      position: absolute;
+      right: 0;
+      top: 5px;
     }
   }
 
@@ -53,6 +64,16 @@
       &.active {
         color: $color-red;
       }
+    }
+  }
+
+  .comments {
+    // likes
+    label {
+      color: $color-dark-grey;
+      display: block;
+      font-weight: bold;
+      padding: 0 0 0.7em;
     }
   }
 

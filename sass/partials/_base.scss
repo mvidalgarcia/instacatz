@@ -1,5 +1,5 @@
 // Typography
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
 body {
     font-family: 'Lato', sans-serif;
@@ -9,6 +9,10 @@ body {
 a {
   text-decoration: none;
   font-weight: bold;
+}
+
+time {
+  font-weight: 300;
 }
 
 button {
