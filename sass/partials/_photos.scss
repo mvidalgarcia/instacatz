@@ -46,9 +46,10 @@
 
   .user-actions {
     span {
+      color: $color-light-grey;
+      cursor: pointer;
       font-size: 20px;
       margin: 0.25em 0 0.5em;
-      color: $color-light-grey;
     }
     span + span {
       margin-left: 10px;

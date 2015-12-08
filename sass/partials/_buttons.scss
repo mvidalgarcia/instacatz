@@ -1,7 +1,20 @@
 button {
-  color: $color-grey;
-  border: none;
   background: transparent;
-  font-size: 10pt;
+  border: none;
+  color: $color-grey;
+  cursor: pointer;
+  font-size: 13px;
   padding: 0;
+}
+
+// Mobile
+@media all and (max-width: $mobile-width) {
+  font-size: 13px;
+}
+
+// Tablet
+@media all and (min-width: $mobile-width+1px) and (max-width: $tablet-width) {
+  button {
+    font-size: 15px;
+  }
 }
