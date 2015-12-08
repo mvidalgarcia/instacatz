@@ -12,6 +12,54 @@
 
       img {
         max-width: 100%;
+        padding: 0.5em 0;
+      }
+    }
+  }
+
+  .user {
+    display: table;
+    img {
+      @include border-radius(50%);
+      display: table-cell;
+      vertical-align: middle;
+      height: 20px;
+      padding: 0;
+      width: 20px;
+    }
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 0.4em;
+    }
+  }
+
+  .user-actions {
+    span {
+      font-size: 20px;
+      margin-bottom: 0.5em;
+      color: $color-grey;
+    }
+    span + span {
+      margin-left: 10px;
+    }
+
+    .fa-heart {
+      &.active {
+        color: $color-red;
+      }
+    }
+  }
+
+}
+
+// Mobile
+@media all and (max-width: $mobile-width) {
+
+  .photos {
+    ul {
+      li {
+        margin: 1em 0;
       }
     }
   }

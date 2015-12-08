@@ -1,0 +1,16 @@
+// Typography
+body {
+    font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.photos {
+  a {
+    color: $color-main-blue;
+    font-weight: bold;
+    font-size: 11pt;
+  }
+}
