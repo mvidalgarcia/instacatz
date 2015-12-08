@@ -3,10 +3,11 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 11pt;
+    font-size: 14pt;
 }
 
 a {
+  color: $color-main-blue;
   text-decoration: none;
   font-weight: bold;
 }
@@ -17,11 +18,24 @@ time {
 
 button {
  font-family: inherit;
- font-size: 10pt;
  font-weight: bold;
 }
 
 footer {
   font-family: monospace;
-  font-size: 9pt;
+}
+
+
+// Mobile
+@media all and (max-width: $mobile-width) {
+  body {
+      font-size: 11pt;
+  }
+}
+
+// Tablet
+@media all and (min-width: $mobile-width+1px) and (max-width: $tablet-width) {
+  body {
+      font-size: 13pt;
+  }
 }

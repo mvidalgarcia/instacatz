@@ -1,6 +1,6 @@
 .wrapper {
   width: $max-width;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 /*** Grid layout ***/
@@ -47,16 +47,31 @@
 .column-12 { width: 100%; }
 
 
-// Mobile
-@media all and (max-width: $mobile-width) {
+// Mobile and tablet
+@media all and (max-width: $tablet-width) {
   .column-1, .column-2, .column-3,
   .column-4, .column-5, .column-6,
   .column-7, .column-8, .column-9,
   .column-10, .column-11, .column-12 {
     width: 100%;
   }
+
   .wrapper {
-    margin-top: 0;
     width: 100%;
+  }
+
+}
+
+// Mobile
+@media all and (max-width: $mobile-width) {
+  .column {
+    padding: 0 15px;
+  }
+}
+
+// Tablet
+@media all and (min-width: $mobile-width+1px) and (max-width: $tablet-width) {
+  .column, .column + .column {
+    padding: 0 30px;
   }
 }

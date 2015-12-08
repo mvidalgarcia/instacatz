@@ -1,28 +1,22 @@
 .photos {
 
-  margin: 50px 0 0;
-
-  a {
-    color: $color-main-blue;
-    font-weight: bold;
-  }
-
   ul {
     width: 100%;
 
     li {
       display: inline-block;
-      margin: 0;
-      @extend .column-3;
+      margin: 1em 0;
+      //@extend .column-3;
 
-      img {
-        max-width: 100%;
-        padding: 0.5em 0;
+      // main photo (avoid avatar)
+      &>img {
+        width: 100%;
       }
     }
   }
 
   .user {
+    margin: .4em 0;
     position: relative;
     width: 100%;
 
@@ -53,7 +47,7 @@
   .user-actions {
     span {
       font-size: 20px;
-      margin-bottom: 0.5em;
+      margin: 0.25em 0 0.5em;
       color: $color-light-grey;
     }
     span + span {
@@ -90,12 +84,13 @@
 
 // Mobile
 @media all and (max-width: $mobile-width) {
-
   .photos {
-    ul {
-      li {
-        margin: 1em 0;
-      }
-    }
+    margin: 50px 0 0;
   }
+
+}
+
+// Tablet
+@media all and (min-width: $mobile-width+1px) and (max-width: $tablet-width) {
+
 }

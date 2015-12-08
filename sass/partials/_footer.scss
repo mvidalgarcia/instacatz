@@ -1,13 +1,33 @@
 footer {
   background: $color-dark-grey;
   @include color-white-opacity(0.5);
-  height: 5em;
-  line-height: 5em;
+  font-size: 12pt;
+  height: 12em;
+  line-height: 12em;
+  margin: 2em 0 0;
   text-align: center;
   width: 100%;
   label {
     display: inline-block;
     line-height: normal;
     vertical-align: middle;
+  }
+}
+
+// Mobile
+@media all and (max-width: $mobile-width) {
+  footer {
+    font-size: 9pt;
+    height: 5em;
+    line-height: 5em;
+    margin: 1em 0 0;
+  }
+}
+
+// Tablet
+@media all and (min-width: $mobile-width+1px) and (max-width: $tablet-width) {
+  footer {
+    height: 10em;
+    line-height: 10em;
   }
 }

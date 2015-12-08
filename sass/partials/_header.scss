@@ -1,17 +1,25 @@
 .header {
   background: $color-main-blue;
-  color: white;
+  color: $color-white;
   font-family: 'Billabong', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  left: 0;
-  padding: 15px 10px 5px;
-  position: fixed;
-  top: 0;
+  padding: 30px 20px 10px;
   width: 100%;
-  z-index: 1;
 }
 
 @media all and (max-width: $mobile-width) {
+  .header {
+    font-size: 30px;
+    left: 0;
+    padding: 15px 10px 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+// Tablet
+@media all and (min-width: $mobile-width+1px) and (max-width: $tablet-width) {
 
 }
