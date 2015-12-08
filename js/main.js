@@ -1,10 +1,10 @@
 $(function() {
   $('#hamburger').click(function() {
-    $('.collapsable-menu, .side-screen').addClass('active');
+    $('.collapsable-menu, .shadow-screen').addClass('active');
 
   });
 
   $('#cross').click(function() {
-    $('.collapsable-menu, .side-screen').removeClass('active');
+    $('.collapsable-menu, .shadow-screen').removeClass('active');
   });
 });

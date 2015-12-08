@@ -235,82 +235,73 @@ body {
     width: 100%;
   }
 }
-/* Collapsable menu */
-/* line 3, ../sass/base/_menu.scss */
-.collapsable-menu {
-  display: none;
-}
-
+/* Mobile */
 @media all and (max-width: 320px) {
-  /* line 9, ../sass/base/_menu.scss */
+  /* line 4, ../sass/base/_menu.scss */
   .collapsable-menu {
     background: #125688;
-    display: block;
     height: 100%;
+    left: -75%;
     padding: 10px 15px;
     position: fixed;
     top: 0;
-    left: 0;
+    transition: transform 0.5s;
     width: 75%;
     z-index: 30;
   }
-  /* line 20, ../sass/base/_menu.scss */
+  /* line 15, ../sass/base/_menu.scss */
   .collapsable-menu ul li {
     padding: 10px;
   }
-  /* line 22, ../sass/base/_menu.scss */
+  /* line 17, ../sass/base/_menu.scss */
   .collapsable-menu ul li a {
     color: white;
   }
-
-  /* line 30, ../sass/base/_menu.scss */
-  .collapse {
-    display: none;
-    transition: all 2s;
-  }
-  /* line 33, ../sass/base/_menu.scss */
-  .collapse.active {
-    display: block;
+  /* line 22, ../sass/base/_menu.scss */
+  .collapsable-menu.active {
+    transform: translateX(100%);
   }
 
-  /* line 38, ../sass/base/_menu.scss */
-  .side-screen {
+  /* line 28, ../sass/base/_menu.scss */
+  .shadow-screen {
     background: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    left: 0;
     height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
     visibility: hidden;
     width: 100%;
     z-index: 20;
   }
-  /* line 46, ../sass/base/_menu.scss */
-  .side-screen.active {
+  /* line 37, ../sass/base/_menu.scss */
+  .shadow-screen.active {
     visibility: visible;
   }
 
-  /* line 51, ../sass/base/_menu.scss */
+  /* line 43, ../sass/base/_menu.scss */
   .sidebar {
     display: none;
   }
 
-  /* line 56, ../sass/base/_menu.scss */
+  /* line 48, ../sass/base/_menu.scss */
   .btn {
     background: none;
     border: none;
     color: #fff;
-    position: fixed;
-  }
-  /* line 61, ../sass/base/_menu.scss */
-  .btn.hamburger-btn {
-    left: 10px;
-    top: 12.5px;
     z-index: 10;
   }
-  /* line 66, ../sass/base/_menu.scss */
-  .btn.cross-btn {
-    left: 60%;
+  /* line 53, ../sass/base/_menu.scss */
+  .btn.hamburger-btn {
+    left: 10px;
+    position: fixed;
+    top: 12.5px;
   }
-  /* line 69, ../sass/base/_menu.scss */
+  /* line 58, ../sass/base/_menu.scss */
+  .btn.cross-btn {
+    left: 85%;
+    position: relative;
+  }
+  /* line 62, ../sass/base/_menu.scss */
   .btn .fa {
     font-size: 20px;
   }
