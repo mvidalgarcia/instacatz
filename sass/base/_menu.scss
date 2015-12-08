@@ -8,7 +8,7 @@
     padding: 10px 15px;
     position: fixed;
     top: 0;
-    transition: transform 0.5s;
+    @include transition(transform 0.5s);
     width: 75%;
     z-index: 30;
     ul {
@@ -20,7 +20,7 @@
       }
     }
     &.active {
-      transform: translateX(100%);
+      @include transform(translateX(100%));
     }
   }
 

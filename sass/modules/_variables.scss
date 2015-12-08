@@ -23,3 +23,13 @@ $desktop-width: 1024px;
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform-function) {
+  -webkit-transform: $transform-function;
+  transform: $transform-function;
+}
