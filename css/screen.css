@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url(fonts/Billabong.ttf);
 }
 /* Mixins */
-/* line 1, ../sass/modules/_buttons.scss */
+/* line 1, ../sass/partials/_buttons.scss */
 .button {
   color: #555;
   background: #dcdcdc url("https://goo.gl/GQP2yG") no-repeat right 20px center;
@@ -83,7 +83,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 40px;
 }
 
-/* line 8, ../sass/modules/_buttons.scss */
+/* line 8, ../sass/partials/_buttons.scss */
 .button_secondary {
   background: red;
   -moz-border-radius: 15px;
@@ -91,137 +91,137 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-border-radius: 15px;
   border-radius: 15px;
 }
-/* line 11, ../sass/modules/_buttons.scss */
+/* line 11, ../sass/partials/_buttons.scss */
 .button_secondary span {
   color: white;
 }
 
-/* line 1, ../sass/modules/_products.scss */
+/* line 1, ../sass/partials/_products.scss */
 .products {
   margin: 50px 0;
 }
-/* line 5, ../sass/modules/_products.scss */
+/* line 5, ../sass/partials/_products.scss */
 .products ul {
   width: 100%;
 }
-/* line 8, ../sass/modules/_products.scss */
+/* line 8, ../sass/partials/_products.scss */
 .products ul li {
   display: inline-block;
   margin: 0;
 }
-/* line 13, ../sass/modules/_products.scss */
+/* line 13, ../sass/partials/_products.scss */
 .products ul li img {
   max-width: 100%;
 }
 
-/* line 1, ../sass/base/_layouts.scss */
+/* line 1, ../sass/partials/_layouts.scss */
 body {
   font-family: sans-serif;
 }
 
-/* line 5, ../sass/base/_layouts.scss */
+/* line 5, ../sass/partials/_layouts.scss */
 .wrapper {
   width: 968px;
   margin: 20px auto;
 }
 
 /*** Grid layout ***/
-/* line 11, ../sass/base/_layouts.scss */
+/* line 11, ../sass/partials/_layouts.scss */
 .row,
 .column {
   box-sizing: border-box;
 }
 
-/* line 16, ../sass/base/_layouts.scss */
+/* line 16, ../sass/partials/_layouts.scss */
 .row:before,
 .row:after {
   content: "";
   display: table;
 }
 
-/* line 22, ../sass/base/_layouts.scss */
+/* line 22, ../sass/partials/_layouts.scss */
 .row:after {
   clear: both;
 }
 
-/* line 26, ../sass/base/_layouts.scss */
+/* line 26, ../sass/partials/_layouts.scss */
 .column {
   position: relative;
   float: left;
 }
 
-/* line 32, ../sass/base/_layouts.scss */
+/* line 32, ../sass/partials/_layouts.scss */
 .column + .column {
   padding: 0 15px;
 }
 
-/* line 36, ../sass/base/_layouts.scss */
+/* line 36, ../sass/partials/_layouts.scss */
 .container {
   position: relative;
 }
 
-/* line 40, ../sass/base/_layouts.scss */
+/* line 40, ../sass/partials/_layouts.scss */
 .column-1 {
   width: 6.86666666667%;
 }
 
-/* line 41, ../sass/base/_layouts.scss */
+/* line 41, ../sass/partials/_layouts.scss */
 .column-2 {
   width: 15.3333333333%;
 }
 
-/* line 42, ../sass/base/_layouts.scss */
+/* line 42, ../sass/partials/_layouts.scss */
 .column-3, .products ul li {
   width: 23.8%;
 }
 
-/* line 43, ../sass/base/_layouts.scss */
+/* line 43, ../sass/partials/_layouts.scss */
 .column-4 {
   width: 32.2666666667%;
 }
 
-/* line 44, ../sass/base/_layouts.scss */
+/* line 44, ../sass/partials/_layouts.scss */
 .column-5 {
   width: 40.7333333333%;
 }
 
-/* line 45, ../sass/base/_layouts.scss */
+/* line 45, ../sass/partials/_layouts.scss */
 .column-6 {
   width: 49.2%;
 }
 
-/* line 46, ../sass/base/_layouts.scss */
+/* line 46, ../sass/partials/_layouts.scss */
 .column-7 {
   width: 57.6666666667%;
 }
 
-/* line 47, ../sass/base/_layouts.scss */
+/* line 47, ../sass/partials/_layouts.scss */
 .column-8 {
   width: 66.1333333333%;
 }
 
-/* line 48, ../sass/base/_layouts.scss */
+/* line 48, ../sass/partials/_layouts.scss */
 .column-9 {
   width: 74.6%;
 }
 
-/* line 49, ../sass/base/_layouts.scss */
+/* line 49, ../sass/partials/_layouts.scss */
 .column-10 {
   width: 83.0666666667%;
 }
 
-/* line 50, ../sass/base/_layouts.scss */
+/* line 50, ../sass/partials/_layouts.scss */
 .column-11 {
   width: 91.5333333333%;
 }
 
-/* line 51, ../sass/base/_layouts.scss */
+/* line 51, ../sass/partials/_layouts.scss */
 .column-12 {
   width: 100%;
 }
 
 @media all and (max-width: 320px) {
-  /* line 56, ../sass/base/_layouts.scss */
+  /* line 56, ../sass/partials/_layouts.scss */
   .column-1, .column-2, .column-3, .products ul li,
   .column-4, .column-5, .column-6,
   .column-7, .column-8, .column-9,
@@ -229,7 +229,7 @@ body {
     width: 100%;
   }
 
-  /* line 62, ../sass/base/_layouts.scss */
+  /* line 62, ../sass/partials/_layouts.scss */
   .wrapper {
     margin-top: 0;
     width: 100%;
@@ -237,7 +237,7 @@ body {
 }
 /* Mobile */
 @media all and (max-width: 320px) {
-  /* line 4, ../sass/base/_menu.scss */
+  /* line 4, ../sass/partials/_menu.scss */
   .collapsable-menu {
     background: #125688;
     height: 100%;
@@ -250,21 +250,21 @@ body {
     width: 75%;
     z-index: 30;
   }
-  /* line 15, ../sass/base/_menu.scss */
+  /* line 15, ../sass/partials/_menu.scss */
   .collapsable-menu ul li {
     padding: 10px;
   }
-  /* line 17, ../sass/base/_menu.scss */
+  /* line 17, ../sass/partials/_menu.scss */
   .collapsable-menu ul li a {
     color: white;
   }
-  /* line 22, ../sass/base/_menu.scss */
+  /* line 22, ../sass/partials/_menu.scss */
   .collapsable-menu.active {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 
-  /* line 28, ../sass/base/_menu.scss */
+  /* line 28, ../sass/partials/_menu.scss */
   .shadow-screen {
     background: rgba(0, 0, 0, 0.3);
     height: 100%;
@@ -275,40 +275,40 @@ body {
     width: 100%;
     z-index: 20;
   }
-  /* line 37, ../sass/base/_menu.scss */
+  /* line 37, ../sass/partials/_menu.scss */
   .shadow-screen.active {
     visibility: visible;
   }
 
-  /* line 43, ../sass/base/_menu.scss */
+  /* line 43, ../sass/partials/_menu.scss */
   .sidebar {
     display: none;
   }
 
-  /* line 48, ../sass/base/_menu.scss */
+  /* line 48, ../sass/partials/_menu.scss */
   .btn {
     background: none;
     border: none;
     color: #fff;
     z-index: 10;
   }
-  /* line 53, ../sass/base/_menu.scss */
+  /* line 53, ../sass/partials/_menu.scss */
   .btn.hamburger-btn {
     left: 10px;
     position: fixed;
     top: 12.5px;
   }
-  /* line 58, ../sass/base/_menu.scss */
+  /* line 58, ../sass/partials/_menu.scss */
   .btn.cross-btn {
     left: 85%;
     position: relative;
   }
-  /* line 62, ../sass/base/_menu.scss */
+  /* line 62, ../sass/partials/_menu.scss */
   .btn .fa {
     font-size: 20px;
   }
 }
-/* line 1, ../sass/base/_header.scss */
+/* line 1, ../sass/partials/_header.scss */
 .header {
   background: #125688;
   color: white;
