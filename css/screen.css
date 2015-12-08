@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Lato);
 /* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,46 +76,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url(fonts/Billabong.ttf);
 }
 /* Mixins */
-/* line 2, ../sass/partials/_base.scss */
+/* line 4, ../sass/partials/_base.scss */
 body {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 11pt;
 }
 
-/* line 7, ../sass/partials/_base.scss */
+/* line 9, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* line 12, ../sass/partials/_base.scss */
-.photos a {
-  color: #125688;
+/* line 14, ../sass/partials/_base.scss */
+button {
+  font-family: inherit;
+  font-size: 10pt;
   font-weight: bold;
+}
+
+/* line 20, ../sass/partials/_base.scss */
+footer {
+  font-family: monospace;
+  font-size: 9pt;
 }
 
 /* line 1, ../sass/partials/_photos.scss */
 .photos {
-  margin: 50px 0;
+  margin: 50px 0 0;
 }
 /* line 5, ../sass/partials/_photos.scss */
+.photos a {
+  color: #125688;
+  font-weight: bold;
+}
+/* line 10, ../sass/partials/_photos.scss */
 .photos ul {
   width: 100%;
 }
-/* line 8, ../sass/partials/_photos.scss */
+/* line 13, ../sass/partials/_photos.scss */
 .photos ul li {
   display: inline-block;
   margin: 0;
 }
-/* line 13, ../sass/partials/_photos.scss */
+/* line 18, ../sass/partials/_photos.scss */
 .photos ul li img {
   max-width: 100%;
   padding: 0.5em 0;
 }
-/* line 20, ../sass/partials/_photos.scss */
+/* line 25, ../sass/partials/_photos.scss */
 .photos .user {
   display: table;
 }
-/* line 22, ../sass/partials/_photos.scss */
+/* line 27, ../sass/partials/_photos.scss */
 .photos .user img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -122,37 +136,43 @@ a {
   border-radius: 50%;
   display: table-cell;
   vertical-align: middle;
-  height: 20px;
+  height: 25px;
   padding: 0;
-  width: 20px;
+  width: 25px;
 }
-/* line 30, ../sass/partials/_photos.scss */
+/* line 35, ../sass/partials/_photos.scss */
 .photos .user a {
   display: table-cell;
   vertical-align: middle;
   padding-left: 0.4em;
 }
-/* line 38, ../sass/partials/_photos.scss */
+/* line 43, ../sass/partials/_photos.scss */
 .photos .user-actions span {
   font-size: 20px;
   margin-bottom: 0.5em;
   color: #c7c7c7;
 }
-/* line 43, ../sass/partials/_photos.scss */
+/* line 48, ../sass/partials/_photos.scss */
 .photos .user-actions span + span {
   margin-left: 10px;
 }
-/* line 48, ../sass/partials/_photos.scss */
+/* line 53, ../sass/partials/_photos.scss */
 .photos .user-actions .fa-heart.active {
   color: #dc3434;
 }
-/* line 55, ../sass/partials/_photos.scss */
+/* line 59, ../sass/partials/_photos.scss */
+.photos .comment {
+  text-align: justify;
+  text-justify: inter-word;
+  padding: .2em 0;
+}
+/* line 62, ../sass/partials/_photos.scss */
 .photos .comment a:after {
   content: ' ';
 }
 
 @media all and (max-width: 320px) {
-  /* line 67, ../sass/partials/_photos.scss */
+  /* line 75, ../sass/partials/_photos.scss */
   .photos ul li {
     margin: 1em 0;
   }
@@ -372,7 +392,26 @@ a {
   z-index: 1;
 }
 
+/* line 1, ../sass/partials/_footer.scss */
+footer {
+  background: #222;
+  color: rgba(255, 255, 255, 0.5);
+  height: 5em;
+  line-height: 5em;
+  text-align: center;
+  width: 100%;
+}
+/* line 8, ../sass/partials/_footer.scss */
+footer span {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+
 /* line 1, ../sass/partials/_buttons.scss */
-.button {
-  color: red;
+button {
+  color: #969696;
+  border: none;
+  background: transparent;
+  padding: 0;
 }

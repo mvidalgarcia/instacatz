@@ -1,7 +1,13 @@
 /* Colours */
 $color-main-blue: #125688;
-$color-light-grey: #fafafa;
-$color-grey: #c7c7c7;
+$color-superlight-grey: #fafafa;
+$color-light-grey: #c7c7c7;
+$color-grey: #969696;
+$color-dark-grey: #222;
 $color-red: #dc3434;
 $color-white: #fff;
 $color-black: #000;
+
+@mixin color-white-opacity($opacity) {
+  color: rgba(255, 255, 255, $opacity);
+}

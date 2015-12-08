@@ -1,3 +1,6 @@
-.button {
-  color: red;
+button {
+  color: $color-grey;
+  border: none;
+  background: transparent;
+  padding: 0;
 }

@@ -1,0 +1,13 @@
+footer {
+  background: $color-dark-grey;
+  @include color-white-opacity(0.5);
+  height: 5em;
+  line-height: 5em;
+  text-align: center;
+  width: 100%;
+  span {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+  }
+}
