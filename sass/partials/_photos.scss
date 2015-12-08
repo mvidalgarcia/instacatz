@@ -51,6 +51,12 @@
     }
   }
 
+  .comment {
+    a:after {
+      content: ' ';
+    }
+  }
+
 }
 
 // Mobile

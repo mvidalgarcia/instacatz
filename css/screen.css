@@ -78,39 +78,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 2, ../sass/partials/_base.scss */
 body {
   font-family: sans-serif;
+  font-size: 11pt;
 }
 
-/* line 6, ../sass/partials/_base.scss */
+/* line 7, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 11, ../sass/partials/_base.scss */
+/* line 12, ../sass/partials/_base.scss */
 .photos a {
   color: #125688;
   font-weight: bold;
-  font-size: 11pt;
-}
-
-/* line 1, ../sass/partials/_buttons.scss */
-.button {
-  color: #555;
-  background: #dcdcdc url("https://goo.gl/GQP2yG") no-repeat right 20px center;
-  background-size: contain;
-  padding-right: 40px;
-}
-
-/* line 8, ../sass/partials/_buttons.scss */
-.button_secondary {
-  background: red;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -ms-border-radius: 15px;
-  border-radius: 15px;
-}
-/* line 11, ../sass/partials/_buttons.scss */
-.button_secondary span {
-  color: white;
 }
 
 /* line 1, ../sass/partials/_photos.scss */
@@ -167,9 +146,13 @@ a {
 .photos .user-actions .fa-heart.active {
   color: #dc3434;
 }
+/* line 55, ../sass/partials/_photos.scss */
+.photos .comment a:after {
+  content: ' ';
+}
 
 @media all and (max-width: 320px) {
-  /* line 61, ../sass/partials/_photos.scss */
+  /* line 67, ../sass/partials/_photos.scss */
   .photos ul li {
     margin: 1em 0;
   }
@@ -387,4 +370,9 @@ a {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+/* line 1, ../sass/partials/_buttons.scss */
+.button {
+  color: red;
 }
