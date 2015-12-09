@@ -25,7 +25,7 @@
     display: block;
     height: 100%;
     left: -75%;
-    padding: 10px 15px;
+    padding: 0;
     position: fixed;
     top: 0;
     @include transition(transform 0.5s);
@@ -33,10 +33,32 @@
     z-index: 30;
     ul {
       li {
-        padding: 10px;
+        padding: 17.5px 30px;
+        border-bottom: 1px solid;
+        @include color-border-white-opacity(0.1);
         a {
           color: white;
+          // Space between icon and text
+          .fa:after {
+            content: '\00a0\00a0';
+            display: inline;
+          }
         }
+        &.active {
+          a {
+            color: $color-light-blue;
+          }
+        }
+      }
+      // Instacatz title un collapsable-menu
+      li:first-child {
+        color: $color-white;
+        background: $color-dark-blue;
+        border: none;
+        font-family: 'Billabong', sans-serif;
+        font-size: 25px;
+        padding: 15px 30px 10px;
+
       }
     }
     &.active {
@@ -68,17 +90,19 @@
   .btn {
     background: none;
     border: none;
-    color: $color-white;
     z-index: 10;
     &.hamburger-btn {
+      color: $color-white;
       display: block;
-      left: 10px;
+      left: 15px;
       position: fixed;
-      top: 12.5px;
+      top: 15px;
     }
     &.cross-btn {
+      @include color-white-opacity(0.8);
       left: 90%;
-      position: relative;
+      position: absolute;
+      top: 15px;
     }
     .fa {
       font-size: 20px;

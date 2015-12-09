@@ -1,6 +1,8 @@
 /* Colours */
 $color-main-blue: #125688;
 $color-superlight-blue: #e0edf7;
+$color-light-blue: #bae1ff;
+$color-dark-blue: #0c304a;
 $color-superlight-grey: #fafafa;
 $color-light-grey: #c7c7c7;
 $color-grey: #969696;
@@ -11,4 +13,8 @@ $color-black: #000;
 
 @mixin color-white-opacity($opacity) {
   color: rgba(255, 255, 255, $opacity);
+}
+
+@mixin color-border-white-opacity($opacity) {
+  border-color: rgba(255, 255, 255, $opacity);
 }
