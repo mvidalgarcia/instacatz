@@ -173,30 +173,34 @@ footer {
 .photos .user-actions span + span {
   margin-left: 10px;
 }
-/* line 59, ../sass/partials/_photos.scss */
+/* line 57, ../sass/partials/_photos.scss */
+.photos .user-actions span:hover {
+  color: #969696;
+}
+/* line 62, ../sass/partials/_photos.scss */
 .photos .user-actions .fa-heart.active {
   color: #dc3434;
 }
-/* line 67, ../sass/partials/_photos.scss */
+/* line 70, ../sass/partials/_photos.scss */
 .photos .comments label {
-  color: #222;
+  color: #555;
   display: block;
   font-weight: bold;
   padding: 0 0 0.7em;
 }
-/* line 75, ../sass/partials/_photos.scss */
+/* line 78, ../sass/partials/_photos.scss */
 .photos .comment {
   text-align: justify;
   text-justify: inter-word;
   padding: .2em 0;
 }
-/* line 78, ../sass/partials/_photos.scss */
+/* line 81, ../sass/partials/_photos.scss */
 .photos .comment a:after {
   content: ' ';
 }
 
 @media all and (max-width: 414px) {
-  /* line 88, ../sass/partials/_photos.scss */
+  /* line 91, ../sass/partials/_photos.scss */
   .photos {
     margin: 50px 0 0;
   }
@@ -357,15 +361,19 @@ footer {
 .regular-menu li.active {
   background: #e0edf7;
 }
+/* line 15, ../sass/partials/_menu.scss */
+.regular-menu li:hover {
+  background: #bae1ff;
+}
 
-/* line 17, ../sass/partials/_menu.scss */
+/* line 20, ../sass/partials/_menu.scss */
 .hamburger-btn {
   display: none;
 }
 
 /* Mobile */
 @media all and (max-width: 414px) {
-  /* line 23, ../sass/partials/_menu.scss */
+  /* line 26, ../sass/partials/_menu.scss */
   .collapsable-menu {
     background: #125688;
     display: block;
@@ -379,26 +387,26 @@ footer {
     width: 75%;
     z-index: 30;
   }
-  /* line 35, ../sass/partials/_menu.scss */
+  /* line 38, ../sass/partials/_menu.scss */
   .collapsable-menu ul li {
     padding: 17.5px 30px;
     border-bottom: 1px solid;
     border-color: rgba(255, 255, 255, 0.1);
   }
-  /* line 39, ../sass/partials/_menu.scss */
+  /* line 42, ../sass/partials/_menu.scss */
   .collapsable-menu ul li a {
     color: white;
   }
-  /* line 42, ../sass/partials/_menu.scss */
+  /* line 45, ../sass/partials/_menu.scss */
   .collapsable-menu ul li a .fa:after {
     content: '\00a0\00a0';
     display: inline;
   }
-  /* line 48, ../sass/partials/_menu.scss */
+  /* line 51, ../sass/partials/_menu.scss */
   .collapsable-menu ul li.active a {
     color: #bae1ff;
   }
-  /* line 54, ../sass/partials/_menu.scss */
+  /* line 57, ../sass/partials/_menu.scss */
   .collapsable-menu ul li:first-child {
     color: #fff;
     background: #0c304a;
@@ -407,13 +415,13 @@ footer {
     font-size: 25px;
     padding: 15px 30px 10px;
   }
-  /* line 64, ../sass/partials/_menu.scss */
+  /* line 67, ../sass/partials/_menu.scss */
   .collapsable-menu.active {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 
-  /* line 70, ../sass/partials/_menu.scss */
+  /* line 73, ../sass/partials/_menu.scss */
   .shadow-screen {
     background: rgba(0, 0, 0, 0.3);
     height: 100%;
@@ -424,23 +432,23 @@ footer {
     width: 100%;
     z-index: 20;
   }
-  /* line 79, ../sass/partials/_menu.scss */
+  /* line 82, ../sass/partials/_menu.scss */
   .shadow-screen.active {
     visibility: visible;
   }
 
-  /* line 85, ../sass/partials/_menu.scss */
+  /* line 88, ../sass/partials/_menu.scss */
   .regular-menu {
     display: none;
   }
 
-  /* line 90, ../sass/partials/_menu.scss */
+  /* line 93, ../sass/partials/_menu.scss */
   .btn {
     background: none;
     border: none;
     z-index: 10;
   }
-  /* line 94, ../sass/partials/_menu.scss */
+  /* line 97, ../sass/partials/_menu.scss */
   .btn.hamburger-btn {
     color: #fff;
     display: block;
@@ -448,25 +456,25 @@ footer {
     position: fixed;
     top: 15px;
   }
-  /* line 101, ../sass/partials/_menu.scss */
+  /* line 104, ../sass/partials/_menu.scss */
   .btn.cross-btn {
     color: rgba(255, 255, 255, 0.8);
     left: 90%;
     position: absolute;
     top: 15px;
   }
-  /* line 107, ../sass/partials/_menu.scss */
+  /* line 110, ../sass/partials/_menu.scss */
   .btn .fa {
     font-size: 20px;
   }
 }
 @media all and (min-width: 415px) and (max-width: 800px) {
-  /* line 116, ../sass/partials/_menu.scss */
+  /* line 119, ../sass/partials/_menu.scss */
   .regular-menu {
     margin: 1em 0;
     text-align: center;
   }
-  /* line 119, ../sass/partials/_menu.scss */
+  /* line 122, ../sass/partials/_menu.scss */
   .regular-menu li {
     display: inline-block;
     font-size: 12pt;
@@ -482,7 +490,7 @@ footer {
   }
 }
 @media all and (min-width: 801px) {
-  /* line 136, ../sass/partials/_menu.scss */
+  /* line 139, ../sass/partials/_menu.scss */
   .regular-menu::before {
     content: "MENU";
     display: block;
@@ -559,11 +567,16 @@ button {
   padding: 0;
 }
 
+/* line 10, ../sass/partials/_buttons.scss */
+button:hover {
+  color: #555;
+}
+
 @media all and (max-width: 414px) {
   font-size: 13px;
 }
 @media all and (min-width: 415px) and (max-width: 800px) {
-  /* line 17, ../sass/partials/_buttons.scss */
+  /* line 21, ../sass/partials/_buttons.scss */
   button {
     font-size: 15px;
   }

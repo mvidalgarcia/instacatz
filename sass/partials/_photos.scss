@@ -54,6 +54,9 @@
     span + span {
       margin-left: 10px;
     }
+    span:hover {
+      color: $color-grey;
+    }
 
     .fa-heart {
       &.active {

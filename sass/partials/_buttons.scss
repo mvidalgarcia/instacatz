@@ -7,6 +7,10 @@ button {
   padding: 0;
 }
 
+button:hover {
+  color: $color-dark-grey;
+}
+
 // Mobile
 @media all and (max-width: $mobile-width) {
   font-size: 13px;
