@@ -30,3 +30,19 @@ $desktop-width: 1024px;
   -webkit-transform: $transform-function;
   transform: $transform-function;
 }
+
+@mixin column-2() {
+    width: 15.3333333333%;;
+}
+
+@mixin column-3() {
+    width: 23.8%;
+}
+
+@mixin column-4() {
+    width: 32.2666666667%;
+}
+
+@mixin column-6() {
+    width: 49.2%;
+}

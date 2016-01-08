@@ -581,3 +581,54 @@ button:hover {
     font-size: 15px;
   }
 }
+/* line 2, ../sass/partials/_photo_grid.scss */
+.photo-grid ul {
+  width: 100%;
+}
+/* line 4, ../sass/partials/_photo_grid.scss */
+.photo-grid ul li {
+  display: inline-block;
+  margin: 0;
+  width: 23.8%;
+}
+/* line 9, ../sass/partials/_photo_grid.scss */
+.photo-grid ul img {
+  max-width: 100%;
+}
+/* line 15, ../sass/partials/_photo_grid.scss */
+.photo-grid .profile {
+  margin: 2em 1em;
+}
+/* line 18, ../sass/partials/_photo_grid.scss */
+.photo-grid .profile img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 15.3333333333%;
+}
+/* line 23, ../sass/partials/_photo_grid.scss */
+.photo-grid .profile > * {
+  vertical-align: middle;
+}
+/* line 27, ../sass/partials/_photo_grid.scss */
+.photo-grid .profile label {
+  color: #969696;
+}
+
+@media all and (max-width: 414px) {
+  /* line 38, ../sass/partials/_photo_grid.scss */
+  .photo-grid ul li {
+    width: 49.2%;
+  }
+  /* line 42, ../sass/partials/_photo_grid.scss */
+  .photo-grid .profile {
+    margin: 60px 0 10px;
+  }
+}
+@media all and (min-width: 415px) and (max-width: 800px) {
+  /* line 53, ../sass/partials/_photo_grid.scss */
+  .photo-grid ul li {
+    width: 32.2666666667%;
+  }
+}

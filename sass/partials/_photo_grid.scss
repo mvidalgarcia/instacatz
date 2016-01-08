@@ -1,0 +1,59 @@
+.photo-grid {
+  ul {
+    width: 100%;
+    li {
+      display: inline-block;
+      margin: 0;
+      @include column-3;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+
+  .profile {
+    margin: 2em 1em;
+
+    img {
+      @include border-radius(50%);
+      @include column-2();
+    }
+
+    &>* {
+      vertical-align: middle;
+    }
+
+    label {
+      color: $color-grey;
+    }
+  }
+
+}
+
+// Mobile
+@media all and (max-width: $mobile-width) {
+  .photo-grid {
+    ul {
+      li {
+        @include column-6();
+      }
+    }
+    .profile {
+      margin: 60px 0 10px;
+    }
+  }
+
+}
+
+// Tablet
+@media all and (min-width: $mobile-width+1px) and (max-width: $tablet-width) {
+  .photo-grid {
+    ul {
+      li {
+        @include column-4();
+      }
+    }
+  }
+
+}
