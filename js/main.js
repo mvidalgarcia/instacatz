@@ -1,10 +1,10 @@
 $(function() {
-  $('#hamburger').click(function() {
+  $(document).on('click', '#hamburger', function() {
     $('.collapsable-menu, .shadow-screen').addClass('active');
 
   });
 
-  $('#cross').click(function() {
+  $(document).on('click', '#cross', function() {
     $('.collapsable-menu, .shadow-screen').removeClass('active');
   });
 });
