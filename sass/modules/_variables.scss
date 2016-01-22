@@ -12,37 +12,3 @@ $desktop-width: 1024px;
     font-family: Billabong;
     src: url(fonts/Billabong.ttf);
 }
-
-/* Mixins */
-@mixin border-radius($radius) {
-  -moz-border-radius: $radius;
-  -webkit-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
-@mixin transition($transition...) {
-  -webkit-transition: $transition;
-  transition: $transition;
-}
-
-@mixin transform($transform-function) {
-  -webkit-transform: $transform-function;
-  transform: $transform-function;
-}
-
-@mixin column-2() {
-    width: 15.3333333333%;;
-}
-
-@mixin column-3() {
-    width: 23.8%;
-}
-
-@mixin column-4() {
-    width: 32.2666666667%;
-}
-
-@mixin column-6() {
-    width: 49.2%;
-}

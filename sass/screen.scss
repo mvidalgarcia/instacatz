@@ -6,8 +6,10 @@
 @import "compass/reset";
 
 // Modules: Mixins, functions and variables
-// Does not cause css output
-@import "modules/all";
+// (Files doesn't cause css output)
+@import "modules/colours";
+@import "modules/variables";
+@import "modules/mixins";
 
 // Partials
 @import "partials/base";
